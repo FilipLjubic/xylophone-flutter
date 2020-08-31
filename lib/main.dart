@@ -26,6 +26,7 @@ class _XylophoneAppState extends State<XylophoneApp> {
     for (int i = 1; i <= 7; i++) {
       var button = Expanded(
         child: FlatButton(
+          child: null,
           color: myColorList[i - 1],
           onPressed: () {
             player.play('note$i.wav');
